@@ -1,7 +1,7 @@
 (function ($) {
 
     if (!$) {
-        console.error('jquery-parallel-ajax: jQuery not found');
+        throw Error('jquery-parallel-ajax: jQuery not found');
     }
 
     var defalutOption = {
