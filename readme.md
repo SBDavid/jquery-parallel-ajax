@@ -10,12 +10,13 @@ This is a jquery plugin which make jquery ajax calls concurrently. The responses
 | options       | array         | an array of jQuery ajax option, option.success and option.error will be override      |
 | success       | function(resArray)   | success callback   |
 | error         | function(error)      | error callback     |
-| timeout       | number               | timeout in ms      |
+| timeout       | number               | timeout in ms (3000ms by default)     |
 
 ## Usage
 
 - be sure that the jquery is loaded
 - npm i jquery-parallel-ajax
+- $.parallelAjax(options, success, error, 3000);
 
 ## Simple
 HTML
