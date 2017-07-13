@@ -3,13 +3,16 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "jquery",
-    "ajax"
+    "ajax",
+    "parallel",
+    "concurrent"
   ],
   "author": "DavidTang",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SBDavid/jquery-parallel-ajax"
+  }
 }
