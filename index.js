@@ -6,12 +6,12 @@
 
     var defalutOption = {
         type: 'GET',
-        cache: true,
+        cache: true
     };
 
     var reqAmount = 0;
     var resList = {
-        length: 0,
+        length: 0
     };
     var timeoutTimer = null;
     var timeoutDefault = 3000;
@@ -32,7 +32,7 @@
         resList.length = -1;
         console.error('reqCallBackError', {
             index: idx,
-            error: err,
+            error: err
         });
         errorCallback(err);
         clearTimeout(timeoutTimer);
@@ -40,11 +40,11 @@
 
     function parallelAjax(options, success, error, timeout) {
         var ajaxOptions = [];
-        if (!$.isArray(options)) {
-            ajaxOptions.push(options);
+        if (options instanceof Array) {
+            ajaxOptions = options;
         }
         else {
-            ajaxOptions = options;
+            ajaxOptions.push(options);
         }
         // set ajax amount
         reqAmount = ajaxOptions.length;
@@ -76,7 +76,7 @@
     }
 
     $.extend({
-        'parallelAjax': parallelAjax,
+        'parallelAjax': parallelAjax
     })
 })(window.jQuery);
 

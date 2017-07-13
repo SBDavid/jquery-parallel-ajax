@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>test</title>
-    <script src="./jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.2.6/jquery.min.js"></script>
     <script src="../index.js"></script>
     <script>
         $.parallelAjax([
-            {url: 'https://api.github.com/'},
-            {url: 'https://api.github.com/'},
+            {url: 'https://api.github.com/'}
         ], function(response) {
             console.info('success', response);
         }, function(error) {

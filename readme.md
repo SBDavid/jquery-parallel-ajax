@@ -4,6 +4,17 @@ This is a jquery plugin which make jquery ajax calls concurrently. The responses
 
 `note: the ajax option.success and option.error will be override, please use success parament and error parament`
 
+##  Compatibility
+| Browser       | Support          |
+| ------------- |:----------------:|
+| IE 7          | √                |
+| IE 8          | √                |
+| IE 9          | √                |
+| IE 10         | √                |
+| IE 11         | √                |
+| chrome 59     | √                |
+| FF 54         | √                |
+
 ## Paraments
 | paramName     | type          | comment  |
 | ------------- |:-------------:| -----:|
@@ -11,6 +22,7 @@ This is a jquery plugin which make jquery ajax calls concurrently. The responses
 | success       | function(resArray)   | success callback   |
 | error         | function(error)      | error callback     |
 | timeout       | number               | timeout in ms (3000ms by default)     |
+
 
 ## Usage
 
